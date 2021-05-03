@@ -1,1 +1,1 @@
-web: gunicorn mongoapi
+web: sh setup.sh && streamlit run mongoapi.py
