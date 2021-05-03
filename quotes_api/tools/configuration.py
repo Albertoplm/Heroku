@@ -12,6 +12,6 @@ if not dburl:
     raise ValueError("no tienes url mongodb")
 
 #Vamos a conectar con la base de datos
-client = MongoClient("mongodb+srv://dbuser:api2021@cluster0.q59hz.mongodb.net/API")
+client = MongoClient(dburl)
 db = client.get_database()
 collection = db["quotes"]
